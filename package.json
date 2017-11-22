@@ -1,0 +1,17 @@
+{
+  "name": "sponsor_counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stats.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "node-trello": "^1.3.0",
+    "request": "^2.83.0",
+    "slack-incoming-webhook": "^1.1.0"
+  }
+}
