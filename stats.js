@@ -30,6 +30,6 @@ async.parallel([
     var waiting = array[5] + array[6] + array[7];
     var sum = array.reduce(function(p, c){return p + c});
     var tracking = "Tracking " + sum + " companies";
-    var stats = "Stats: we have " + yes / sum * 100 + " percent of companies who have said yes\n" + waiting / sum * 100 + " percent of companies who we are waiting on replies\n" + undone / sum * 100 + " percent of companies we have not emailed";
+    var stats = "Stats: we have " + Number(yes / sum * 100).toFixed(2) + " % of companies who have said yes\n" + Number(waiting / sum * 100).toFixed(2) + " % of companies who we are waiting on replies\n" + Number(undone / sum * 100).toFixed(2) + " % of companies we have not emailed";
     sponsors(tracking + "\n" + stats);
 });
